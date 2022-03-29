@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="az">
+<head>
+    <title>Sign in</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+</head>
+<body>
+
+
+
+<div class="main-container">
+
+
+    <div class="sign-in">
+
+        <h3 class="row1">Log in</h3>
+
+
+        <form name="login">
+
+            <input class="row2" name="id" type="text" placeholder="Enter e-mail">
+            <p id="error-message1"></p>
+            <input class="row2" name="pass" type="password" placeholder="Enter password">
+            <p id="error-message2"></p>
+
+            <div class="row3"><input type="button" value="Login" onClick="pasuser(this.form)"></div>
+
+            <!-- <div class="row3"> <input type="Reset" value="reset"> </div> -->
+
+        </form>
+
+        <p class="row4">Or</p>
+
+        <div class="row5"><!-- <img class="google" src="google.png"> --><p> Continue with Google</p></div>
+        <div class="row5"><!--<img class="facebook" src="Facebook.png">--><p>Continue with Facebook</p></div>
+        <div class="row5"><!--<img class="apple" src="apple.png">--><p>Continue with Apple</p></div>
+
+        <div class="row6"><a class="row6" href="#">Already have an account?</a></div>
+
+    </div sign-in>
+</div main-container>
+
+
+
+<script type="text/javascript" src="app.js"></script>
+
+<script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.10/firebase-app.js";
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.6.10/firebase-analytics.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+  
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    const firebaseConfig = {
+      apiKey: "AIzaSyDaQXcc81x_uX_aipK42fxN_u9dNmbUEjI",
+      authDomain: "login-page-code.firebaseapp.com",
+      projectId: "login-page-code",
+      storageBucket: "login-page-code.appspot.com",
+      messagingSenderId: "1037312979158",
+      appId: "1:1037312979158:web:de66447c3b3ecafe495977",
+      measurementId: "G-SGNC2D3E8E"};
+  
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
+  </script>
+</body>
+</html>
